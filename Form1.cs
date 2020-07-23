@@ -21,6 +21,33 @@ namespace WinCalc3
             InitializeComponent();
         }
 
+        // configura o tamanho inicial do form
+        private void form_Calc_Load(object sender, EventArgs e)
+        {
+            this.Width = 260;
+            result.Width = 214;
+        }
+        // configura o tamanho do form para calc standard
+        private void standardToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Width = 260;
+            result.Width = 214;
+        }
+
+        // configura o tamanho do form para calc Cientifica
+        private void scientificToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Width = 500;
+            result.Width = 457;
+        }
+
+        // configura o tamanho do form para menu Temperatura, Conversão de Unidade e Tabuada
+        private void temperatureToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Width = 900;
+            result.Width = 457;
+        }
+
 
         //Cobre os botoes numéricos e de decimal
         private void btn_Click(object sender, EventArgs e)
@@ -35,12 +62,12 @@ namespace WinCalc3
         //Botão Back Space
         private void btn_BckSpace_Click(object sender, EventArgs e)
         {
-            if(result.Text.Length >0)
+            if (result.Text.Length > 0)
             {
-                result.Text = result.Text.Remove(result.Text.Length - 1, 1);                
+                result.Text = result.Text.Remove(result.Text.Length - 1, 1);
             }
 
-            if (result.Text =="")
+            if (result.Text == "")
             {
                 result.Text = "0";
             }
@@ -52,7 +79,7 @@ namespace WinCalc3
             result.Text = "0";
         }
 
-         // Botão C
+        // Botão C
         private void button27_Click(object sender, EventArgs e)
         {
             result.Text = "0";
@@ -113,7 +140,7 @@ namespace WinCalc3
 
         }
 
-       //Calcula o quadrado do valor 
+        //Calcula o quadrado do valor 
         private void btn_Sqr_Click(object sender, EventArgs e)
         {
             Double quad;
@@ -126,7 +153,7 @@ namespace WinCalc3
         //Inverte sinal
         private void btn_InvertSign_Click(object sender, EventArgs e)
         {
-            if(result.Text.StartsWith("-"))
+            if (result.Text.StartsWith("-"))
             {
                 result.Text = result.Text.Substring(1);
             }
