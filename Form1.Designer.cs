@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(form_Calc));
-            this.btn_Percent = new System.Windows.Forms.Button();
+            this.btn_InvertSign = new System.Windows.Forms.Button();
             this.btn_Cube = new System.Windows.Forms.Button();
             this.btn_Sqr = new System.Windows.Forms.Button();
             this.btn_SqrRoot = new System.Windows.Forms.Button();
@@ -57,25 +57,27 @@
             this.btn_BckSpace = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // btn_Percent
+            // btn_InvertSign
             // 
-            this.btn_Percent.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Percent.Location = new System.Drawing.Point(178, 63);
-            this.btn_Percent.Name = "btn_Percent";
-            this.btn_Percent.Size = new System.Drawing.Size(49, 51);
-            this.btn_Percent.TabIndex = 7;
-            this.btn_Percent.Text = "+/-";
-            this.btn_Percent.UseVisualStyleBackColor = true;
+            this.btn_InvertSign.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_InvertSign.Location = new System.Drawing.Point(178, 63);
+            this.btn_InvertSign.Name = "btn_InvertSign";
+            this.btn_InvertSign.Size = new System.Drawing.Size(49, 51);
+            this.btn_InvertSign.TabIndex = 7;
+            this.btn_InvertSign.Text = "+/-";
+            this.btn_InvertSign.UseVisualStyleBackColor = true;
+            this.btn_InvertSign.Click += new System.EventHandler(this.btn_InvertSign_Click);
             // 
             // btn_Cube
             // 
-            this.btn_Cube.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Cube.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Cube.Location = new System.Drawing.Point(123, 63);
             this.btn_Cube.Name = "btn_Cube";
             this.btn_Cube.Size = new System.Drawing.Size(49, 51);
             this.btn_Cube.TabIndex = 6;
-            this.btn_Cube.Text = "x^y";
+            this.btn_Cube.Text = "^";
             this.btn_Cube.UseVisualStyleBackColor = true;
+            this.btn_Cube.Click += new System.EventHandler(this.btn_Operator);
             // 
             // btn_Sqr
             // 
@@ -86,6 +88,7 @@
             this.btn_Sqr.TabIndex = 5;
             this.btn_Sqr.Text = "x^2";
             this.btn_Sqr.UseVisualStyleBackColor = true;
+            this.btn_Sqr.Click += new System.EventHandler(this.btn_Sqr_Click);
             // 
             // btn_SqrRoot
             // 
@@ -305,6 +308,7 @@
             this.btn_Invert.TabIndex = 25;
             this.btn_Invert.Text = "1/x";
             this.btn_Invert.UseVisualStyleBackColor = true;
+            this.btn_Invert.Click += new System.EventHandler(this.btn_Invert_Click);
             // 
             // result
             // 
@@ -366,7 +370,7 @@
             this.Controls.Add(this.button10);
             this.Controls.Add(this.button11);
             this.Controls.Add(this.button12);
-            this.Controls.Add(this.btn_Percent);
+            this.Controls.Add(this.btn_InvertSign);
             this.Controls.Add(this.btn_Cube);
             this.Controls.Add(this.btn_Sqr);
             this.Controls.Add(this.btn_SqrRoot);
@@ -380,7 +384,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btn_Percent;
+        private System.Windows.Forms.Button btn_InvertSign;
         private System.Windows.Forms.Button btn_Cube;
         private System.Windows.Forms.Button btn_Sqr;
         private System.Windows.Forms.Button btn_SqrRoot;
