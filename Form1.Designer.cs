@@ -54,6 +54,7 @@
             this.btn_Invert = new System.Windows.Forms.Button();
             this.result = new System.Windows.Forms.TextBox();
             this.lbl_Eq = new System.Windows.Forms.Label();
+            this.btn_BckSpace = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn_Percent
@@ -265,9 +266,9 @@
             // button25
             // 
             this.button25.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button25.Location = new System.Drawing.Point(233, 234);
+            this.button25.Location = new System.Drawing.Point(233, 291);
             this.button25.Name = "button25";
-            this.button25.Size = new System.Drawing.Size(49, 108);
+            this.button25.Size = new System.Drawing.Size(49, 51);
             this.button25.TabIndex = 29;
             this.button25.Text = "=";
             this.button25.UseVisualStyleBackColor = true;
@@ -276,7 +277,7 @@
             // button27
             // 
             this.button27.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button27.Location = new System.Drawing.Point(233, 177);
+            this.button27.Location = new System.Drawing.Point(232, 234);
             this.button27.Name = "button27";
             this.button27.Size = new System.Drawing.Size(49, 51);
             this.button27.TabIndex = 27;
@@ -287,7 +288,7 @@
             // button28
             // 
             this.button28.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button28.Location = new System.Drawing.Point(233, 120);
+            this.button28.Location = new System.Drawing.Point(232, 177);
             this.button28.Name = "button28";
             this.button28.Size = new System.Drawing.Size(49, 51);
             this.button28.TabIndex = 26;
@@ -327,11 +328,23 @@
             this.lbl_Eq.Size = new System.Drawing.Size(0, 20);
             this.lbl_Eq.TabIndex = 31;
             // 
+            // btn_BckSpace
+            // 
+            this.btn_BckSpace.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_BckSpace.Location = new System.Drawing.Point(234, 120);
+            this.btn_BckSpace.Name = "btn_BckSpace";
+            this.btn_BckSpace.Size = new System.Drawing.Size(49, 51);
+            this.btn_BckSpace.TabIndex = 32;
+            this.btn_BckSpace.Text = "⌫ ";
+            this.btn_BckSpace.UseVisualStyleBackColor = true;
+            this.btn_BckSpace.Click += new System.EventHandler(this.btn_BckSpace_Click);
+            // 
             // form_Calc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(295, 354);
+            this.Controls.Add(this.btn_BckSpace);
             this.Controls.Add(this.lbl_Eq);
             this.Controls.Add(this.result);
             this.Controls.Add(this.button25);
@@ -392,6 +405,7 @@
         private System.Windows.Forms.Button btn_Invert;
         private System.Windows.Forms.TextBox result;
         private System.Windows.Forms.Label lbl_Eq;
+        private System.Windows.Forms.Button btn_BckSpace;
     }
 }
 

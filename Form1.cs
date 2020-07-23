@@ -30,6 +30,19 @@ namespace WinCalc3
             result.Text = result.Text + b.Text;
         }
 
+        private void btn_BckSpace_Click(object sender, EventArgs e)
+        {
+            if(result.Text.Length >0)
+            {
+                result.Text = result.Text.Remove(result.Text.Length - 1, 1);                
+            }
+
+            if (result.Text =="")
+            {
+                result.Text = "0";
+            }
+        }
+
         private void button28_Click(object sender, EventArgs e)
         {
             result.Text = "0";
@@ -88,7 +101,7 @@ namespace WinCalc3
             }
             oper_press = false;
         }
+
         
-    
     }
 }
