@@ -122,6 +122,8 @@ namespace WinCalc3
             result.Text = System.Convert.ToString(quad);
         }
 
+
+        //Inverte sinal
         private void btn_InvertSign_Click(object sender, EventArgs e)
         {
             if(result.Text.StartsWith("-"))
@@ -134,6 +136,8 @@ namespace WinCalc3
             }
         }
 
+
+        // calcula 1/x
         private void btn_Invert_Click(object sender, EventArgs e)
         {
             Double inv;
