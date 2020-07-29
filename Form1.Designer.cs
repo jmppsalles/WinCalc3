@@ -55,42 +55,56 @@
             this.result = new System.Windows.Forms.TextBox();
             this.lbl_Eq = new System.Windows.Forms.Label();
             this.btn_BckSpace = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button23 = new System.Windows.Forms.Button();
-            this.button26 = new System.Windows.Forms.Button();
-            this.button29 = new System.Windows.Forms.Button();
-            this.button30 = new System.Windows.Forms.Button();
-            this.button31 = new System.Windows.Forms.Button();
-            this.button32 = new System.Windows.Forms.Button();
-            this.button33 = new System.Windows.Forms.Button();
-            this.button34 = new System.Windows.Forms.Button();
+            this.btn_LogNat = new System.Windows.Forms.Button();
+            this.btn_Percent = new System.Windows.Forms.Button();
+            this.btn_Oct = new System.Windows.Forms.Button();
+            this.btn_Hex = new System.Windows.Forms.Button();
+            this.btn_Bin = new System.Windows.Forms.Button();
+            this.btn_Dec = new System.Windows.Forms.Button();
+            this.btn_Mod = new System.Windows.Forms.Button();
+            this.btn_Tan = new System.Windows.Forms.Button();
+            this.btn_Cos = new System.Windows.Forms.Button();
+            this.btn_Sin = new System.Windows.Forms.Button();
+            this.btn_Log = new System.Windows.Forms.Button();
+            this.btn_Exp = new System.Windows.Forms.Button();
+            this.btn_Tanh = new System.Windows.Forms.Button();
+            this.btn_Cosh = new System.Windows.Forms.Button();
+            this.btn_Sinh = new System.Windows.Forms.Button();
+            this.btn_PI = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.standardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.scientificToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.temperatureToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.unitConversionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tabuadaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tabuadaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.rdbtn_Cel2Kelv = new System.Windows.Forms.RadioButton();
+            this.radbtn_fahr2cels = new System.Windows.Forms.RadioButton();
+            this.radbtn_cels2fahr = new System.Windows.Forms.RadioButton();
+            this.radbtn_Far2Kelv = new System.Windows.Forms.RadioButton();
+            this.result_txtBox = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.Conv_TxtBox = new System.Windows.Forms.TextBox();
+            this.btn_TempReset = new System.Windows.Forms.Button();
+            this.btn_TempConvert = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // btn_InvertSign
             // 
-            this.btn_InvertSign.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_InvertSign.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_InvertSign.Location = new System.Drawing.Point(180, 101);
             this.btn_InvertSign.Name = "btn_InvertSign";
             this.btn_InvertSign.Size = new System.Drawing.Size(49, 51);
             this.btn_InvertSign.TabIndex = 7;
-            this.btn_InvertSign.Text = "+/-";
+            this.btn_InvertSign.Text = "±";
             this.btn_InvertSign.UseVisualStyleBackColor = true;
             this.btn_InvertSign.Click += new System.EventHandler(this.btn_InvertSign_Click);
             // 
@@ -112,7 +126,7 @@
             this.btn_Sqr.Name = "btn_Sqr";
             this.btn_Sqr.Size = new System.Drawing.Size(49, 51);
             this.btn_Sqr.TabIndex = 5;
-            this.btn_Sqr.Text = "x^2";
+            this.btn_Sqr.Text = "x²";
             this.btn_Sqr.UseVisualStyleBackColor = true;
             this.btn_Sqr.Click += new System.EventHandler(this.btn_Sqr_Click);
             // 
@@ -129,7 +143,7 @@
             // 
             // button9
             // 
-            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button9.Location = new System.Drawing.Point(180, 159);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(49, 51);
@@ -173,7 +187,7 @@
             // 
             // button13
             // 
-            this.button13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button13.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button13.Location = new System.Drawing.Point(180, 216);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(49, 51);
@@ -217,7 +231,7 @@
             // 
             // button17
             // 
-            this.button17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button17.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button17.Location = new System.Drawing.Point(180, 273);
             this.button17.Name = "button17";
             this.button17.Size = new System.Drawing.Size(49, 51);
@@ -261,7 +275,7 @@
             // 
             // button21
             // 
-            this.button21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button21.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button21.Location = new System.Drawing.Point(180, 330);
             this.button21.Name = "button21";
             this.button21.Size = new System.Drawing.Size(49, 51);
@@ -369,165 +383,181 @@
             this.btn_BckSpace.UseVisualStyleBackColor = true;
             this.btn_BckSpace.Click += new System.EventHandler(this.btn_BckSpace_Click);
             // 
-            // button1
+            // btn_LogNat
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(423, 273);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(49, 51);
-            this.button1.TabIndex = 33;
-            this.button1.Text = "ln x";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_LogNat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_LogNat.Location = new System.Drawing.Point(423, 273);
+            this.btn_LogNat.Name = "btn_LogNat";
+            this.btn_LogNat.Size = new System.Drawing.Size(49, 51);
+            this.btn_LogNat.TabIndex = 33;
+            this.btn_LogNat.Text = "ln x";
+            this.btn_LogNat.UseVisualStyleBackColor = true;
+            this.btn_LogNat.Click += new System.EventHandler(this.btn_LogNat_Click);
             // 
-            // button2
+            // btn_Percent
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(423, 330);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(49, 51);
-            this.button2.TabIndex = 34;
-            this.button2.Text = "%";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btn_Percent.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Percent.Location = new System.Drawing.Point(423, 330);
+            this.btn_Percent.Name = "btn_Percent";
+            this.btn_Percent.Size = new System.Drawing.Size(49, 51);
+            this.btn_Percent.TabIndex = 34;
+            this.btn_Percent.Text = "%";
+            this.btn_Percent.UseVisualStyleBackColor = true;
+            this.btn_Percent.Click += new System.EventHandler(this.btn_Percent_Click);
             // 
-            // button3
+            // btn_Oct
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(367, 330);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(49, 51);
-            this.button3.TabIndex = 38;
-            this.button3.Text = "Oct";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btn_Oct.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Oct.Location = new System.Drawing.Point(367, 330);
+            this.btn_Oct.Name = "btn_Oct";
+            this.btn_Oct.Size = new System.Drawing.Size(49, 51);
+            this.btn_Oct.TabIndex = 38;
+            this.btn_Oct.Text = "Oct";
+            this.btn_Oct.UseVisualStyleBackColor = true;
+            this.btn_Oct.Click += new System.EventHandler(this.btn_Oct_Click);
             // 
-            // button4
+            // btn_Hex
             // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(367, 273);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(49, 51);
-            this.button4.TabIndex = 37;
-            this.button4.Text = "Hex";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btn_Hex.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Hex.Location = new System.Drawing.Point(367, 273);
+            this.btn_Hex.Name = "btn_Hex";
+            this.btn_Hex.Size = new System.Drawing.Size(49, 51);
+            this.btn_Hex.TabIndex = 37;
+            this.btn_Hex.Text = "Hex";
+            this.btn_Hex.UseVisualStyleBackColor = true;
+            this.btn_Hex.Click += new System.EventHandler(this.btn_Hex_Click);
             // 
-            // button5
+            // btn_Bin
             // 
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(367, 216);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(49, 51);
-            this.button5.TabIndex = 36;
-            this.button5.Text = "Bin";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btn_Bin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Bin.Location = new System.Drawing.Point(367, 216);
+            this.btn_Bin.Name = "btn_Bin";
+            this.btn_Bin.Size = new System.Drawing.Size(49, 51);
+            this.btn_Bin.TabIndex = 36;
+            this.btn_Bin.Text = "Bin";
+            this.btn_Bin.UseVisualStyleBackColor = true;
+            this.btn_Bin.Click += new System.EventHandler(this.btn_Bin_Click);
             // 
-            // button6
+            // btn_Dec
             // 
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(367, 159);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(49, 51);
-            this.button6.TabIndex = 35;
-            this.button6.Text = "Dec";
-            this.button6.UseVisualStyleBackColor = true;
+            this.btn_Dec.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Dec.Location = new System.Drawing.Point(367, 159);
+            this.btn_Dec.Name = "btn_Dec";
+            this.btn_Dec.Size = new System.Drawing.Size(49, 51);
+            this.btn_Dec.TabIndex = 35;
+            this.btn_Dec.Text = "Dec";
+            this.btn_Dec.UseVisualStyleBackColor = true;
+            this.btn_Dec.Click += new System.EventHandler(this.btn_Dec_Click);
             // 
-            // button7
+            // btn_Mod
             // 
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(310, 330);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(49, 51);
-            this.button7.TabIndex = 43;
-            this.button7.Text = "Mod";
-            this.button7.UseVisualStyleBackColor = true;
+            this.btn_Mod.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Mod.Location = new System.Drawing.Point(310, 330);
+            this.btn_Mod.Name = "btn_Mod";
+            this.btn_Mod.Size = new System.Drawing.Size(49, 51);
+            this.btn_Mod.TabIndex = 43;
+            this.btn_Mod.Text = "Mod";
+            this.btn_Mod.UseVisualStyleBackColor = true;
+            this.btn_Mod.Click += new System.EventHandler(this.btn_Operator);
             // 
-            // button8
+            // btn_Tan
             // 
-            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Location = new System.Drawing.Point(310, 273);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(49, 51);
-            this.button8.TabIndex = 42;
-            this.button8.Text = "Tan";
-            this.button8.UseVisualStyleBackColor = true;
+            this.btn_Tan.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Tan.Location = new System.Drawing.Point(310, 273);
+            this.btn_Tan.Name = "btn_Tan";
+            this.btn_Tan.Size = new System.Drawing.Size(49, 51);
+            this.btn_Tan.TabIndex = 42;
+            this.btn_Tan.Text = "Tan";
+            this.btn_Tan.UseVisualStyleBackColor = true;
+            this.btn_Tan.Click += new System.EventHandler(this.btn_Tan_Click);
             // 
-            // button23
+            // btn_Cos
             // 
-            this.button23.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button23.Location = new System.Drawing.Point(310, 216);
-            this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(49, 51);
-            this.button23.TabIndex = 41;
-            this.button23.Text = "Cos";
-            this.button23.UseVisualStyleBackColor = true;
+            this.btn_Cos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Cos.Location = new System.Drawing.Point(310, 216);
+            this.btn_Cos.Name = "btn_Cos";
+            this.btn_Cos.Size = new System.Drawing.Size(49, 51);
+            this.btn_Cos.TabIndex = 41;
+            this.btn_Cos.Text = "Cos";
+            this.btn_Cos.UseVisualStyleBackColor = true;
+            this.btn_Cos.Click += new System.EventHandler(this.btn_Cos_Click);
             // 
-            // button26
+            // btn_Sin
             // 
-            this.button26.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button26.Location = new System.Drawing.Point(310, 159);
-            this.button26.Name = "button26";
-            this.button26.Size = new System.Drawing.Size(49, 51);
-            this.button26.TabIndex = 40;
-            this.button26.Text = "Sin";
-            this.button26.UseVisualStyleBackColor = true;
+            this.btn_Sin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Sin.Location = new System.Drawing.Point(310, 159);
+            this.btn_Sin.Name = "btn_Sin";
+            this.btn_Sin.Size = new System.Drawing.Size(49, 51);
+            this.btn_Sin.TabIndex = 40;
+            this.btn_Sin.Text = "Sin";
+            this.btn_Sin.UseVisualStyleBackColor = true;
+            this.btn_Sin.Click += new System.EventHandler(this.btn_Sin_Click);
             // 
-            // button29
+            // btn_Log
             // 
-            this.button29.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button29.Location = new System.Drawing.Point(310, 102);
-            this.button29.Name = "button29";
-            this.button29.Size = new System.Drawing.Size(49, 51);
-            this.button29.TabIndex = 39;
-            this.button29.Text = "Log";
-            this.button29.UseVisualStyleBackColor = true;
+            this.btn_Log.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Log.Location = new System.Drawing.Point(310, 102);
+            this.btn_Log.Name = "btn_Log";
+            this.btn_Log.Size = new System.Drawing.Size(49, 51);
+            this.btn_Log.TabIndex = 39;
+            this.btn_Log.Text = "Log";
+            this.btn_Log.UseVisualStyleBackColor = true;
+            this.btn_Log.Click += new System.EventHandler(this.btn_Log_Click);
             // 
-            // button30
+            // btn_Exp
             // 
-            this.button30.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button30.Location = new System.Drawing.Point(254, 329);
-            this.button30.Name = "button30";
-            this.button30.Size = new System.Drawing.Size(49, 51);
-            this.button30.TabIndex = 48;
-            this.button30.Text = "Exp";
-            this.button30.UseVisualStyleBackColor = true;
+            this.btn_Exp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Exp.Location = new System.Drawing.Point(254, 329);
+            this.btn_Exp.Name = "btn_Exp";
+            this.btn_Exp.Size = new System.Drawing.Size(49, 51);
+            this.btn_Exp.TabIndex = 48;
+            this.btn_Exp.Text = "Exp";
+            this.btn_Exp.UseVisualStyleBackColor = true;
+            this.btn_Exp.Click += new System.EventHandler(this.btn_Operator);
             // 
-            // button31
+            // btn_Tanh
             // 
-            this.button31.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button31.Location = new System.Drawing.Point(254, 272);
-            this.button31.Name = "button31";
-            this.button31.Size = new System.Drawing.Size(49, 51);
-            this.button31.TabIndex = 47;
-            this.button31.Text = "Tan h";
-            this.button31.UseVisualStyleBackColor = true;
+            this.btn_Tanh.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Tanh.Location = new System.Drawing.Point(254, 272);
+            this.btn_Tanh.Name = "btn_Tanh";
+            this.btn_Tanh.Size = new System.Drawing.Size(49, 51);
+            this.btn_Tanh.TabIndex = 47;
+            this.btn_Tanh.Text = "Tan h";
+            this.btn_Tanh.UseVisualStyleBackColor = true;
+            this.btn_Tanh.Click += new System.EventHandler(this.btn_Tanh_Click);
             // 
-            // button32
+            // btn_Cosh
             // 
-            this.button32.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button32.Location = new System.Drawing.Point(254, 215);
-            this.button32.Name = "button32";
-            this.button32.Size = new System.Drawing.Size(49, 51);
-            this.button32.TabIndex = 46;
-            this.button32.Text = "Cos h";
-            this.button32.UseVisualStyleBackColor = true;
+            this.btn_Cosh.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Cosh.Location = new System.Drawing.Point(254, 215);
+            this.btn_Cosh.Name = "btn_Cosh";
+            this.btn_Cosh.Size = new System.Drawing.Size(49, 51);
+            this.btn_Cosh.TabIndex = 46;
+            this.btn_Cosh.Text = "Cos h";
+            this.btn_Cosh.UseVisualStyleBackColor = true;
+            this.btn_Cosh.Click += new System.EventHandler(this.btn_Cosh_Click);
             // 
-            // button33
+            // btn_Sinh
             // 
-            this.button33.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button33.Location = new System.Drawing.Point(254, 158);
-            this.button33.Name = "button33";
-            this.button33.Size = new System.Drawing.Size(49, 51);
-            this.button33.TabIndex = 45;
-            this.button33.Text = "Sin h";
-            this.button33.UseVisualStyleBackColor = true;
+            this.btn_Sinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Sinh.Location = new System.Drawing.Point(254, 158);
+            this.btn_Sinh.Name = "btn_Sinh";
+            this.btn_Sinh.Size = new System.Drawing.Size(49, 51);
+            this.btn_Sinh.TabIndex = 45;
+            this.btn_Sinh.Text = "Sin h";
+            this.btn_Sinh.UseVisualStyleBackColor = true;
+            this.btn_Sinh.Click += new System.EventHandler(this.btn_Sinh_Click);
             // 
-            // button34
+            // btn_PI
             // 
-            this.button34.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button34.Location = new System.Drawing.Point(254, 101);
-            this.button34.Name = "button34";
-            this.button34.Size = new System.Drawing.Size(49, 51);
-            this.button34.TabIndex = 44;
-            this.button34.Text = "𝞹";
-            this.button34.UseVisualStyleBackColor = true;
+            this.btn_PI.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_PI.Location = new System.Drawing.Point(254, 101);
+            this.btn_PI.Name = "btn_PI";
+            this.btn_PI.Size = new System.Drawing.Size(49, 51);
+            this.btn_PI.TabIndex = 44;
+            this.btn_PI.Text = "𝞹";
+            this.btn_PI.UseVisualStyleBackColor = true;
+            this.btn_PI.Click += new System.EventHandler(this.btn_PI_Click);
             // 
             // menuStrip1
             // 
@@ -537,7 +567,7 @@
             this.viewToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(240, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(880, 24);
             this.menuStrip1.TabIndex = 49;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -556,29 +586,37 @@
             // standardToolStripMenuItem
             // 
             this.standardToolStripMenuItem.Name = "standardToolStripMenuItem";
-            this.standardToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.standardToolStripMenuItem.Text = "Standard";
+            this.standardToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
+            this.standardToolStripMenuItem.Text = "Padrão";
             this.standardToolStripMenuItem.Click += new System.EventHandler(this.standardToolStripMenuItem_Click);
             // 
             // scientificToolStripMenuItem
             // 
             this.scientificToolStripMenuItem.Name = "scientificToolStripMenuItem";
-            this.scientificToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.scientificToolStripMenuItem.Text = "Scientific";
+            this.scientificToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
+            this.scientificToolStripMenuItem.Text = "Cientifica";
             this.scientificToolStripMenuItem.Click += new System.EventHandler(this.scientificToolStripMenuItem_Click);
             // 
             // temperatureToolStripMenuItem
             // 
             this.temperatureToolStripMenuItem.Name = "temperatureToolStripMenuItem";
-            this.temperatureToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.temperatureToolStripMenuItem.Text = "Temperature";
+            this.temperatureToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
+            this.temperatureToolStripMenuItem.Text = "Temperatura";
             this.temperatureToolStripMenuItem.Click += new System.EventHandler(this.temperatureToolStripMenuItem_Click);
             // 
             // unitConversionToolStripMenuItem
             // 
             this.unitConversionToolStripMenuItem.Name = "unitConversionToolStripMenuItem";
-            this.unitConversionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.unitConversionToolStripMenuItem.Text = "Unit Conversion";
+            this.unitConversionToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
+            this.unitConversionToolStripMenuItem.Text = "Conversão de unidade";
+            this.unitConversionToolStripMenuItem.Click += new System.EventHandler(this.unitConversionToolStripMenuItem_Click);
+            // 
+            // tabuadaToolStripMenuItem
+            // 
+            this.tabuadaToolStripMenuItem.Name = "tabuadaToolStripMenuItem";
+            this.tabuadaToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
+            this.tabuadaToolStripMenuItem.Text = "Tabuada";
+            this.tabuadaToolStripMenuItem.Click += new System.EventHandler(this.tabuadaToolStripMenuItem_Click);
             // 
             // editToolStripMenuItem
             // 
@@ -592,33 +630,162 @@
             this.viewToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.viewToolStripMenuItem.Text = "View";
             // 
-            // tabuadaToolStripMenuItem
+            // groupBox1
             // 
-            this.tabuadaToolStripMenuItem.Name = "tabuadaToolStripMenuItem";
-            this.tabuadaToolStripMenuItem.Size = new System.Drawing.Size(32, 19);
-            this.tabuadaToolStripMenuItem.Text = "Tabuada";
+            this.groupBox1.Controls.Add(this.groupBox2);
+            this.groupBox1.Controls.Add(this.result_txtBox);
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.Conv_TxtBox);
+            this.groupBox1.Controls.Add(this.btn_TempReset);
+            this.groupBox1.Controls.Add(this.btn_TempConvert);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(488, 64);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(373, 315);
+            this.groupBox1.TabIndex = 50;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Conversão de Temperatura";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBox2.Controls.Add(this.rdbtn_Cel2Kelv);
+            this.groupBox2.Controls.Add(this.radbtn_fahr2cels);
+            this.groupBox2.Controls.Add(this.radbtn_cels2fahr);
+            this.groupBox2.Controls.Add(this.radbtn_Far2Kelv);
+            this.groupBox2.Cursor = System.Windows.Forms.Cursors.Default;
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.ForeColor = System.Drawing.Color.Black;
+            this.groupBox2.Location = new System.Drawing.Point(20, 69);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(308, 150);
+            this.groupBox2.TabIndex = 11;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = " Selecione a conversão";
+            // 
+            // rdbtn_Cel2Kelv
+            // 
+            this.rdbtn_Cel2Kelv.AutoSize = true;
+            this.rdbtn_Cel2Kelv.Location = new System.Drawing.Point(7, 125);
+            this.rdbtn_Cel2Kelv.Name = "rdbtn_Cel2Kelv";
+            this.rdbtn_Cel2Kelv.Size = new System.Drawing.Size(132, 19);
+            this.rdbtn_Cel2Kelv.TabIndex = 3;
+            this.rdbtn_Cel2Kelv.TabStop = true;
+            this.rdbtn_Cel2Kelv.Text = "Celsius -> Kelvin";
+            this.rdbtn_Cel2Kelv.UseVisualStyleBackColor = true;
+            this.rdbtn_Cel2Kelv.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            // 
+            // radbtn_fahr2cels
+            // 
+            this.radbtn_fahr2cels.AutoSize = true;
+            this.radbtn_fahr2cels.Location = new System.Drawing.Point(7, 62);
+            this.radbtn_fahr2cels.Name = "radbtn_fahr2cels";
+            this.radbtn_fahr2cels.Size = new System.Drawing.Size(162, 19);
+            this.radbtn_fahr2cels.TabIndex = 1;
+            this.radbtn_fahr2cels.TabStop = true;
+            this.radbtn_fahr2cels.Text = "Fahrenheit -> Celsius";
+            this.radbtn_fahr2cels.UseVisualStyleBackColor = true;
+            this.radbtn_fahr2cels.CheckedChanged += new System.EventHandler(this.radbtn_fahr2cels_CheckedChanged);
+            // 
+            // radbtn_cels2fahr
+            // 
+            this.radbtn_cels2fahr.AutoSize = true;
+            this.radbtn_cels2fahr.Location = new System.Drawing.Point(7, 31);
+            this.radbtn_cels2fahr.Name = "radbtn_cels2fahr";
+            this.radbtn_cels2fahr.Size = new System.Drawing.Size(162, 19);
+            this.radbtn_cels2fahr.TabIndex = 0;
+            this.radbtn_cels2fahr.TabStop = true;
+            this.radbtn_cels2fahr.Text = "Celsius -> Fahrenheit";
+            this.radbtn_cels2fahr.UseVisualStyleBackColor = true;
+            this.radbtn_cels2fahr.CheckedChanged += new System.EventHandler(this.radbtn_cels2fahr_CheckedChanged);
+            // 
+            // radbtn_Far2Kelv
+            // 
+            this.radbtn_Far2Kelv.AutoSize = true;
+            this.radbtn_Far2Kelv.Location = new System.Drawing.Point(7, 92);
+            this.radbtn_Far2Kelv.Name = "radbtn_Far2Kelv";
+            this.radbtn_Far2Kelv.Size = new System.Drawing.Size(154, 19);
+            this.radbtn_Far2Kelv.TabIndex = 2;
+            this.radbtn_Far2Kelv.TabStop = true;
+            this.radbtn_Far2Kelv.Text = "Fahrenheit -> Kelvin";
+            this.radbtn_Far2Kelv.UseVisualStyleBackColor = true;
+            this.radbtn_Far2Kelv.CheckedChanged += new System.EventHandler(this.radbtn_Kelvin_CheckedChanged);
+            // 
+            // result_txtBox
+            // 
+            this.result_txtBox.Location = new System.Drawing.Point(215, 225);
+            this.result_txtBox.Name = "result_txtBox";
+            this.result_txtBox.Size = new System.Drawing.Size(100, 26);
+            this.result_txtBox.TabIndex = 10;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(16, 40);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(179, 20);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "Valor para conversão";
+            // 
+            // Conv_TxtBox
+            // 
+            this.Conv_TxtBox.Location = new System.Drawing.Point(215, 37);
+            this.Conv_TxtBox.Name = "Conv_TxtBox";
+            this.Conv_TxtBox.Size = new System.Drawing.Size(100, 26);
+            this.Conv_TxtBox.TabIndex = 8;
+            // 
+            // btn_TempReset
+            // 
+            this.btn_TempReset.Location = new System.Drawing.Point(215, 266);
+            this.btn_TempReset.Name = "btn_TempReset";
+            this.btn_TempReset.Size = new System.Drawing.Size(113, 40);
+            this.btn_TempReset.TabIndex = 7;
+            this.btn_TempReset.Text = "Limpar";
+            this.btn_TempReset.UseVisualStyleBackColor = true;
+            this.btn_TempReset.Click += new System.EventHandler(this.btn_TempReset_Click);
+            // 
+            // btn_TempConvert
+            // 
+            this.btn_TempConvert.Location = new System.Drawing.Point(44, 266);
+            this.btn_TempConvert.Name = "btn_TempConvert";
+            this.btn_TempConvert.Size = new System.Drawing.Size(97, 40);
+            this.btn_TempConvert.TabIndex = 6;
+            this.btn_TempConvert.Text = "Converter";
+            this.btn_TempConvert.UseVisualStyleBackColor = true;
+            this.btn_TempConvert.Click += new System.EventHandler(this.btn_TempConvert_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(22, 231);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(91, 20);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Resultado";
             // 
             // form_Calc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(240, 387);
-            this.Controls.Add(this.button30);
-            this.Controls.Add(this.button31);
-            this.Controls.Add(this.button32);
-            this.Controls.Add(this.button33);
-            this.Controls.Add(this.button34);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button23);
-            this.Controls.Add(this.button26);
-            this.Controls.Add(this.button29);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(880, 387);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.btn_Exp);
+            this.Controls.Add(this.btn_Tanh);
+            this.Controls.Add(this.btn_Cosh);
+            this.Controls.Add(this.btn_Sinh);
+            this.Controls.Add(this.btn_PI);
+            this.Controls.Add(this.btn_Mod);
+            this.Controls.Add(this.btn_Tan);
+            this.Controls.Add(this.btn_Cos);
+            this.Controls.Add(this.btn_Sin);
+            this.Controls.Add(this.btn_Log);
+            this.Controls.Add(this.btn_Oct);
+            this.Controls.Add(this.btn_Hex);
+            this.Controls.Add(this.btn_Bin);
+            this.Controls.Add(this.btn_Dec);
+            this.Controls.Add(this.btn_Percent);
+            this.Controls.Add(this.btn_LogNat);
             this.Controls.Add(this.btn_BckSpace);
             this.Controls.Add(this.lbl_Eq);
             this.Controls.Add(this.result);
@@ -658,6 +825,10 @@
             this.Load += new System.EventHandler(this.form_Calc_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -691,22 +862,22 @@
         private System.Windows.Forms.TextBox result;
         private System.Windows.Forms.Label lbl_Eq;
         private System.Windows.Forms.Button btn_BckSpace;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button23;
-        private System.Windows.Forms.Button button26;
-        private System.Windows.Forms.Button button29;
-        private System.Windows.Forms.Button button30;
-        private System.Windows.Forms.Button button31;
-        private System.Windows.Forms.Button button32;
-        private System.Windows.Forms.Button button33;
-        private System.Windows.Forms.Button button34;
+        private System.Windows.Forms.Button btn_LogNat;
+        private System.Windows.Forms.Button btn_Percent;
+        private System.Windows.Forms.Button btn_Oct;
+        private System.Windows.Forms.Button btn_Hex;
+        private System.Windows.Forms.Button btn_Bin;
+        private System.Windows.Forms.Button btn_Dec;
+        private System.Windows.Forms.Button btn_Mod;
+        private System.Windows.Forms.Button btn_Tan;
+        private System.Windows.Forms.Button btn_Cos;
+        private System.Windows.Forms.Button btn_Sin;
+        private System.Windows.Forms.Button btn_Log;
+        private System.Windows.Forms.Button btn_Exp;
+        private System.Windows.Forms.Button btn_Tanh;
+        private System.Windows.Forms.Button btn_Cosh;
+        private System.Windows.Forms.Button btn_Sinh;
+        private System.Windows.Forms.Button btn_PI;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem standardToolStripMenuItem;
@@ -717,6 +888,18 @@
         private System.Windows.Forms.ToolStripMenuItem viewToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem tabuadaToolStripMenuItem;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.TextBox result_txtBox;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox Conv_TxtBox;
+        private System.Windows.Forms.Button btn_TempReset;
+        private System.Windows.Forms.Button btn_TempConvert;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.RadioButton radbtn_Far2Kelv;
+        private System.Windows.Forms.RadioButton radbtn_fahr2cels;
+        private System.Windows.Forms.RadioButton radbtn_cels2fahr;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.RadioButton rdbtn_Cel2Kelv;
     }
 }
 
