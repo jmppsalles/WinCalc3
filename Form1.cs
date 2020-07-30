@@ -261,7 +261,7 @@ namespace WinCalc3
         }
 
         private void btn_Sin_Click(object sender, EventArgs e)
-        //Calcula Seno em Radianos
+        //Calcula Seno em Radianos convertido para grau
         {
             lbl_Eq.Text = System.Convert.ToString("Sin" + "(" + (result.Text) + ")");
             double Sin = Double.Parse(result.Text);
@@ -271,7 +271,7 @@ namespace WinCalc3
         }
 
         private void btn_Cos_Click(object sender, EventArgs e)
-        //Calcula Cosseno em Radianos
+        //Calcula Cosseno em Radianos convertido para grau
         {
             lbl_Eq.Text = System.Convert.ToString("Cos" + "(" + (result.Text) + ")");
             double Cos = Double.Parse(result.Text);
@@ -281,7 +281,7 @@ namespace WinCalc3
         }
 
         private void btn_Tan_Click(object sender, EventArgs e)
-            //Calcula Tangente em Radianos
+        //Calcula Tangente em Radianos convertido para grau
         {
             lbl_Eq.Text = System.Convert.ToString("Tan" + "(" + (result.Text) + ")");
             double Tan = Double.Parse(result.Text);
