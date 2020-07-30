@@ -76,10 +76,7 @@
             this.standardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.scientificToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.temperatureToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.unitConversionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabuadaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.rdbtn_Cel2Kelv = new System.Windows.Forms.RadioButton();
@@ -92,9 +89,16 @@
             this.btn_TempReset = new System.Windows.Forms.Button();
             this.btn_TempConvert = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.lstbx_Multipl = new System.Windows.Forms.ListBox();
+            this.btn_Multip = new System.Windows.Forms.Button();
+            this.btn_MultReset = new System.Windows.Forms.Button();
+            this.txt_Multipl = new System.Windows.Forms.TextBox();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // btn_InvertSign
@@ -562,12 +566,10 @@
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fileToolStripMenuItem,
-            this.editToolStripMenuItem,
-            this.viewToolStripMenuItem});
+            this.fileToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(880, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1040, 24);
             this.menuStrip1.TabIndex = 49;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -577,8 +579,8 @@
             this.standardToolStripMenuItem,
             this.scientificToolStripMenuItem,
             this.temperatureToolStripMenuItem,
-            this.unitConversionToolStripMenuItem,
-            this.tabuadaToolStripMenuItem});
+            this.tabuadaToolStripMenuItem,
+            this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(42, 20);
             this.fileToolStripMenuItem.Text = "Calc";
@@ -586,49 +588,30 @@
             // standardToolStripMenuItem
             // 
             this.standardToolStripMenuItem.Name = "standardToolStripMenuItem";
-            this.standardToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
+            this.standardToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.standardToolStripMenuItem.Text = "Padrão";
             this.standardToolStripMenuItem.Click += new System.EventHandler(this.standardToolStripMenuItem_Click);
             // 
             // scientificToolStripMenuItem
             // 
             this.scientificToolStripMenuItem.Name = "scientificToolStripMenuItem";
-            this.scientificToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
+            this.scientificToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.scientificToolStripMenuItem.Text = "Cientifica";
             this.scientificToolStripMenuItem.Click += new System.EventHandler(this.scientificToolStripMenuItem_Click);
             // 
             // temperatureToolStripMenuItem
             // 
             this.temperatureToolStripMenuItem.Name = "temperatureToolStripMenuItem";
-            this.temperatureToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
+            this.temperatureToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.temperatureToolStripMenuItem.Text = "Temperatura";
             this.temperatureToolStripMenuItem.Click += new System.EventHandler(this.temperatureToolStripMenuItem_Click);
-            // 
-            // unitConversionToolStripMenuItem
-            // 
-            this.unitConversionToolStripMenuItem.Name = "unitConversionToolStripMenuItem";
-            this.unitConversionToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
-            this.unitConversionToolStripMenuItem.Text = "Conversão de unidade";
-            this.unitConversionToolStripMenuItem.Click += new System.EventHandler(this.unitConversionToolStripMenuItem_Click);
             // 
             // tabuadaToolStripMenuItem
             // 
             this.tabuadaToolStripMenuItem.Name = "tabuadaToolStripMenuItem";
-            this.tabuadaToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
+            this.tabuadaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.tabuadaToolStripMenuItem.Text = "Tabuada";
             this.tabuadaToolStripMenuItem.Click += new System.EventHandler(this.tabuadaToolStripMenuItem_Click);
-            // 
-            // editToolStripMenuItem
-            // 
-            this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
-            this.editToolStripMenuItem.Text = "Edit";
-            // 
-            // viewToolStripMenuItem
-            // 
-            this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
-            this.viewToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
-            this.viewToolStripMenuItem.Text = "View";
             // 
             // groupBox1
             // 
@@ -642,7 +625,7 @@
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(488, 64);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(373, 315);
+            this.groupBox1.Size = new System.Drawing.Size(302, 315);
             this.groupBox1.TabIndex = 50;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Conversão de Temperatura";
@@ -659,7 +642,7 @@
             this.groupBox2.ForeColor = System.Drawing.Color.Black;
             this.groupBox2.Location = new System.Drawing.Point(20, 69);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(308, 150);
+            this.groupBox2.Size = new System.Drawing.Size(183, 150);
             this.groupBox2.TabIndex = 11;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = " Selecione a conversão";
@@ -714,7 +697,7 @@
             // 
             // result_txtBox
             // 
-            this.result_txtBox.Location = new System.Drawing.Point(215, 225);
+            this.result_txtBox.Location = new System.Drawing.Point(179, 223);
             this.result_txtBox.Name = "result_txtBox";
             this.result_txtBox.Size = new System.Drawing.Size(100, 26);
             this.result_txtBox.TabIndex = 10;
@@ -724,20 +707,20 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(16, 40);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(179, 20);
+            this.label4.Size = new System.Drawing.Size(158, 20);
             this.label4.TabIndex = 9;
-            this.label4.Text = "Valor para conversão";
+            this.label4.Text = "Valor p/ conversão";
             // 
             // Conv_TxtBox
             // 
-            this.Conv_TxtBox.Location = new System.Drawing.Point(215, 37);
+            this.Conv_TxtBox.Location = new System.Drawing.Point(192, 37);
             this.Conv_TxtBox.Name = "Conv_TxtBox";
             this.Conv_TxtBox.Size = new System.Drawing.Size(100, 26);
             this.Conv_TxtBox.TabIndex = 8;
             // 
             // btn_TempReset
             // 
-            this.btn_TempReset.Location = new System.Drawing.Point(215, 266);
+            this.btn_TempReset.Location = new System.Drawing.Point(179, 265);
             this.btn_TempReset.Name = "btn_TempReset";
             this.btn_TempReset.Size = new System.Drawing.Size(113, 40);
             this.btn_TempReset.TabIndex = 7;
@@ -764,11 +747,69 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "Resultado";
             // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.txt_Multipl);
+            this.groupBox3.Controls.Add(this.btn_MultReset);
+            this.groupBox3.Controls.Add(this.btn_Multip);
+            this.groupBox3.Controls.Add(this.lstbx_Multipl);
+            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox3.Location = new System.Drawing.Point(796, 64);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(235, 315);
+            this.groupBox3.TabIndex = 51;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Tabuada";
+            // 
+            // lstbx_Multipl
+            // 
+            this.lstbx_Multipl.FormattingEnabled = true;
+            this.lstbx_Multipl.ItemHeight = 20;
+            this.lstbx_Multipl.Location = new System.Drawing.Point(6, 22);
+            this.lstbx_Multipl.Name = "lstbx_Multipl";
+            this.lstbx_Multipl.Size = new System.Drawing.Size(121, 264);
+            this.lstbx_Multipl.TabIndex = 0;
+            // 
+            // btn_Multip
+            // 
+            this.btn_Multip.Location = new System.Drawing.Point(133, 66);
+            this.btn_Multip.Name = "btn_Multip";
+            this.btn_Multip.Size = new System.Drawing.Size(84, 40);
+            this.btn_Multip.TabIndex = 1;
+            this.btn_Multip.Text = "Multip.";
+            this.btn_Multip.UseVisualStyleBackColor = true;
+            this.btn_Multip.Click += new System.EventHandler(this.btn_Multip_Click);
+            // 
+            // btn_MultReset
+            // 
+            this.btn_MultReset.Location = new System.Drawing.Point(133, 128);
+            this.btn_MultReset.Name = "btn_MultReset";
+            this.btn_MultReset.Size = new System.Drawing.Size(84, 40);
+            this.btn_MultReset.TabIndex = 2;
+            this.btn_MultReset.Text = "Reset";
+            this.btn_MultReset.UseVisualStyleBackColor = true;
+            this.btn_MultReset.Click += new System.EventHandler(this.btn_MultReset_Click);
+            // 
+            // txt_Multipl
+            // 
+            this.txt_Multipl.Location = new System.Drawing.Point(133, 22);
+            this.txt_Multipl.Name = "txt_Multipl";
+            this.txt_Multipl.Size = new System.Drawing.Size(84, 26);
+            this.txt_Multipl.TabIndex = 3;
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            // 
             // form_Calc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(880, 387);
+            this.ClientSize = new System.Drawing.Size(1040, 387);
+            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btn_Exp);
             this.Controls.Add(this.btn_Tanh);
@@ -817,7 +858,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(1000, 430);
+            this.MaximumSize = new System.Drawing.Size(1060, 430);
             this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(260, 430);
             this.Name = "form_Calc";
@@ -829,6 +870,8 @@
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -883,9 +926,6 @@
         private System.Windows.Forms.ToolStripMenuItem standardToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem scientificToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem temperatureToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem unitConversionToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem viewToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem tabuadaToolStripMenuItem;
         private System.Windows.Forms.GroupBox groupBox1;
@@ -900,6 +940,12 @@
         private System.Windows.Forms.RadioButton radbtn_cels2fahr;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.RadioButton rdbtn_Cel2Kelv;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.TextBox txt_Multipl;
+        private System.Windows.Forms.Button btn_MultReset;
+        private System.Windows.Forms.Button btn_Multip;
+        private System.Windows.Forms.ListBox lstbx_Multipl;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
     }
 }
 

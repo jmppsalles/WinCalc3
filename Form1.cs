@@ -43,23 +43,42 @@ namespace WinCalc3
             result.Width = 457;
         }
 
-        // configura o tamanho do form para menu Temperatura, Conversão de Unidade e Tabuada
+        // configura o tamanho do form e caixa de resultado para menu Temperatura, Conversão de Unidade e Tabuada
         private void temperatureToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Width = 900;
+            this.Width = 840;
             result.Width = 457;
+            Conv_TxtBox.Focus();
+
+            groupBox1.Visible = true;
+            groupBox2.Visible = true;
+            groupBox3.Visible = false;
+
+            groupBox1.Location = new Point(488, 64);
+            groupBox1.Width = 314;
+            groupBox1.Height = 315;
         }
 
         private void unitConversionToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Width = 900;
+            this.Width = 840;
             result.Width = 457;
         }
 
         private void tabuadaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Width = 900;
+            this.Width = 840;
             result.Width = 457;
+            txt_Multipl.Focus();
+
+            groupBox1.Visible = false;
+            groupBox2.Visible = false;
+            groupBox3.Visible = true;
+
+            groupBox3.Location = new Point(488, 64);
+            groupBox3.Width = 260;
+            groupBox3.Height = 315;
+
         }
 
 
@@ -245,8 +264,9 @@ namespace WinCalc3
         //Calcula Seno em Radianos
         {
             lbl_Eq.Text = System.Convert.ToString("Sin" + "(" + (result.Text) + ")");
-            double Sin = Double.Parse(result.Text);            
-            Sin = Math.Sin(Sin);
+            double Sin = Double.Parse(result.Text);
+            double Pi = 3.14159265358979323846;
+            Sin = Math.Sin(Sin * (Pi/180));
             result.Text = System.Convert.ToString(Sin);
         }
 
@@ -255,7 +275,8 @@ namespace WinCalc3
         {
             lbl_Eq.Text = System.Convert.ToString("Cos" + "(" + (result.Text) + ")");
             double Cos = Double.Parse(result.Text);
-            Cos = Math.Cos(Cos);
+            double Pi = 3.14159265358979323846;
+            Cos = Math.Cos(Cos * (Pi / 180));
             result.Text = System.Convert.ToString(Cos);
         }
 
@@ -264,7 +285,8 @@ namespace WinCalc3
         {
             lbl_Eq.Text = System.Convert.ToString("Tan" + "(" + (result.Text) + ")");
             double Tan = Double.Parse(result.Text);
-            Tan = Math.Tan(Tan);
+            double Pi = 3.14159265358979323846;
+            Tan = Math.Tan(Tan * (Pi / 180));
             result.Text = System.Convert.ToString(Tan);
         }
 
@@ -313,6 +335,7 @@ namespace WinCalc3
             result.Text = System.Convert.ToString(perc);
         }
 
+        //declara o que cada botão significa para calculo das conversões
         private void radbtn_fahr2cels_CheckedChanged(object sender, EventArgs e)
         {
             iOperation = 'F';
@@ -332,6 +355,7 @@ namespace WinCalc3
         {
             iOperation = 'C';
         }
+
 
         private void btn_TempConvert_Click(object sender, EventArgs e)
         {
@@ -363,16 +387,41 @@ namespace WinCalc3
                     break;
             }
         }
+
         private void btn_TempReset_Click(object sender, EventArgs e)
+            //Limpa caixas e botões da calc temperatura
         {
             Conv_TxtBox.Clear();
-            result_txtBox.Clear();
+            result_txtBox.Text = "";
             radbtn_cels2fahr.Checked = false;
             radbtn_fahr2cels.Checked = false;
             radbtn_Far2Kelv.Checked = false;
             rdbtn_Cel2Kelv.Checked = false;
+        }
+        
+        //área da tabuada
+        private void btn_Multip_Click(object sender, EventArgs e)
+        // Faz o calculo da tabuada e da o display no listbox
+        {
+            int tab;
+            tab = Convert.ToInt32(txt_Multipl.Text);
+            for (int i = 1; i < 13; i++)
+            {
+                lstbx_Multipl.Items.Add(i + "x" + tab + "=" + tab * i);
+            }
+        }
 
+        private void btn_MultReset_Click(object sender, EventArgs e)
+            //Limpa a tabuada
+        {
+            txt_Multipl.Clear();
+            lstbx_Multipl.Items.Clear();
+        }
 
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+            //Finaliza o aplicativo
+        {
+            Application.Exit();
         }
     }
 }
